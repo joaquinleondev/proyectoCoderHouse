@@ -1,1 +1,1 @@
-Este es un readme de prueba en mi proyecto final de Coder House 1.0
+Este es un readme de prueba en mi proyecto final de Coder House 2.0
