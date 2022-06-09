@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+#bg-gradient {
+  position: absolute;
+  padding: 1%;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  width: 100%;
+  z-index: -2;
+  height: 326%;
+}
+#bg-gradient1 {
+  position: absolute;
+  padding: 1%;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  width: 100%;
+  z-index: -2;
+  height: 100%;
+}
+header > h3 {
+  color: #fff;
+  font-size: 34px;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  margin: 0 20px;
+  position: relative;
+  transition: 0.5s ease-out;
+}
+header ul a::before {
+  position: absolute;
+  content: "";
+  height: 150%;
+  width: 0;
+  background-color: #FFC93E;
+  transition: 0.5s ease-out;
+  z-index: -1;
+  left: -5%;
+  top: -25%;
+}
+header ul a:hover::before {
+  width: 110%;
+  color: #000;
+}
+header ul a:hover {
+  color: #000;
+}
+h1 {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 150px;
+  animation: 1s ease-out;
+  width: fit-content;
+}
+.tittle-1 {
+  left: 50vw;
+}
+.tittle-2 {
+  left: 40vw;
+  animation-delay: 0.1s;
+}
+.hero-1 h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  grid-area: h3;
+  text-align: left;
+  margin: 0 20px;
+  font-weight: 300;
+}
+.hero-1 {
+  display: grid;
+  grid-template-areas: 
+  "h3 img"
+  "boton img";
+  align-items: center;
+  justify-items: center;
+}
+.hero-1 > img {
+  height: 300px;
+  border-radius: 20px;
+  width: 500px;
+  margin: 0 50px;
+  grid-area: img;
+}
+.button-1 {
+  background-color: transparent;
+  border: #FFC93E solid 2px;
+  border-radius: 25px;
+  color: #FFC93E;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  grid-area: boton;
+  position: relative;
+  transition: 0.5s ease-out;
+}
+.button-1:hover {
+  color: #000;
+  border: none;
+}
+.button-1::after {
+  background-color: #FFC93E;
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  transition: 0.5s ease-out;
+  z-index: -1;
+}
+.button-1:hover::after {
+  width: 100%;
+}
+.hero-2 {
+  width: 50%;
+  margin: 50px auto;
+  color: #fff;
+  display: grid;
+  grid-template-areas: 
+  "h2 h2"
+  "card card1"
+  "card2 card3";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  position: relative;
+}
+.hero-2 > div {
+  padding: 50px;
+  height: 500px;
+  background-color: #353F5B;
+}
+.hero-2 h2 {
+  font-size: 50px;
+  grid-area: h2;
+}
+hr {
+  height: 3px;
+  background-color: #fff;
+  border: none;
+  margin: 10px 0;
+}
+.card {
+  grid-area: card;
+  border-radius: 30px 0 0 0;
+}
+.card1 {
+  grid-area: card1;
+  border-radius: 0 30px 0 0;
+  position: absolute;
+  top: 40px;
+}
+.card2 {
+  grid-area: card2;
+  border-radius: 0 0 0 30px;
+}
+.card3 {
+  grid-area: card3;
+  border-radius: 0 0 30px 0;
+  position: absolute;
+  top: 40px;
+}
+.hero-2 h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.h22 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 50px;
+}
+.hero-2 p {
+  margin-top: 30px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+.bt2 {
+  position: relative;
+  margin: 20px 0;
+  transform: scale(0.6);
+}
+.hero-3 {
+  margin: 90px auto;
+  width: 70%;
+}
+.hero-3 h2 {
+  font-size: 50px;
+  color: #fff;
+}
+#flex-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+.valoracion {
+  padding: 50px;
+  width: 500px;
+  border-radius: 50px;
+  background-color: #353F5B;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.valoracion:hover {
+  box-shadow: 0px 5px 50px #353F5B;
+}
+.name {
+  margin: 10px 0;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  "img h5 ul"
+  "img h6 ul";
+  grid-template-columns: 50px auto;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: start;
+}
+.name img {
+  height: 50px;
+  border-radius: 50%;
+  grid-area: img;
+}
+.name h5 {
+  grid-area: h5;
+  color: #fff;
+}
+.name h6 {
+  grid-area: h6;
+  color: #FFC93E;
+}
+.name ul {
+  grid-area: ul;
+  justify-self: end;
+}
+.name ul img {
+  height: 15px;
+  margin: 0 2px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 55% auto auto;
+  grid-gap: 20px;
+  grid-template-areas: "div ul1 ul2";
+  background-color: #353F5B;
+  padding: 50px;
+  width: 100%;
+  align-items: center;
+}
+footer div {
+  background-color: #FFC93E;
+  grid-area: div;
+  border-radius: 30px;
+  padding: 50px 20px;
+}
+footer ul {
+  list-style: none;
+  color: white;
+}
+footer h6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+footer li {
+  font-size: 20px;
+  font-weight: 300;
+}
+footer h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+footer input {
+  border: none;
+  border-bottom: solid 2px #000;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+}
+footer input::placeholder {
+  color: #000;
+  font-weight: 300;
+}
+form {
+  color: #fff;
+  width: 60%;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 475px) {
+  #bg-gradient {
+    width: 100vw;
+    height: 437%;
+  }
+  #bg-gradient1 {
+    height: 143%;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header ul a {
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .hero-1 img {
+    display: none;
+  }
+  .button-1 {
+    margin: 20px 0;
+  }
+  .hero-2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+  }
+  .hero-2 > div {
+    height: auto;
+  }
+  .card2 {
+    display: none;
+  }
+  .card3 {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
