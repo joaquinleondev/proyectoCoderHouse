@@ -36,6 +36,13 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
+  position: relative;
+}
+header img {
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -50px;
 }
 header ul a {
   color: #fff;
